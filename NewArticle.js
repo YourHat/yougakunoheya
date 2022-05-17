@@ -1,0 +1,11 @@
+window.addEventListener('load',function(){document.getElementById('NewArticle').innerHTML = '<br><br>'
++' <div class="Kai"><h2 class="Kaisetu" id="Column">新しい記事</h2></div>'
++'<br>'
++'<div class="New">'
++'<div class="button" style="background-color:red"><a href="ElectricalParadeDreamlights2020Quiz.html"><img class="Img" src="ElectricalPatTDL.jpg" width=100% height=50%>エレクトリカルパレードの曲全て知っていますか？｜ディズニーQuiz</a><br><br><small style="text-align:right;"><a href="https://www.tokyodisneyresort.jp/tdl/show/detail/913/">画像出典：TDL公式</a></small></div>'
+
++'<div class="button" style="background-color:red"><a href="TheLittleMermaidLiveAction.html"><img class="Img" src="TheLittleMermaidPic2.jpg" width=100% height=50%>実写版リトル・マーメイドで分かっているこ</a><br><br><small style="text-align:right;"><a href="https://www.latimes.com/entertainment/movies/la-et-mn-little-mermaid-ariel-halle-bailey-20190703-story.html">画像出典：Los Angels Times</a></small></div>'
++'<div class="button" style="background-color:turquoise"><a href="Speechless.html"><img class="Img" src="JasmineLiveActionPic.jpg"><span class="S">Song:&nbsp;</span>Speechless<br><b>心の声</b><br>Movie:Aladdin Live Action</a><br><small class="Img"><a href="https://screenrant.com/aladdin-2019-characters-posters-genie/" alt="ジャスミン">画像出典：SCREENRANT</a></small></div>'
++'<div class="button" style="background-color:indigo"><a href="MarvelsAvengers.html"><img class="Img" src="avengersvideogame.jpg" width=100% height=50%>マーベルの最新ゲーム『Marvels Avengers』とは</a><br><small style="text-align:right;"><a href="https://www.cnet.com/news/marvels-avengers-video-game-details-leak-ahead-of-e3/" alt="マーベル">画像出典：Clnet</a></small></div>'
++'<div class="button" style="background-color:mediumblue"><a href="DisneyPlus.html"><img class="Img" src="DisneyPlusLogo.jpg" width=100% height=50%>ディズニーが始める最新ストリーミングサービス”ディズニープラス”って何？</a><br><small style="text-align:right;"><a href="https://www.thewaltdisneycompany.com/disney-spotlights-comprehensive-direct-to-consumer-strategy-at-2019-investor-day/">画像出典：TheDisneyCompany</a></small></div>'
+;})

@@ -1,0 +1,683 @@
+
+@charset"utf-8";
+@media screen and (max-width: 2000px) {
+/* -------ベースのデザイン-------------------------------------------------- */
+    html {
+        box-sizing: border-box;
+        background-color:#ffffff;
+        font-family:Arial, Roboto, "Droid Sans","メイリオ", Meiryo,"游ゴシック", YuGothic,"ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, sans-serif;}  
+    *,*:before,*:after {
+        box-sizing: inherit;
+        margin: 0px;
+        padding:0px;
+        color:rgb(41, 41, 41);}
+    body {
+        background-color:#ffffff;
+        line-height: 1.3em;
+        font-weight: 500;}
+    .roudo{
+        border:solid 5px #2256e4;
+        padding:5px;
+        display:block;
+        text-align:center;
+        margin:10px;
+        margin-left:40px;
+        margin-right:40px;
+        font-weight:600;
+        background-color:#ffffff;}
+    header{
+        background-color:#ffffff;
+        margin-bottom:30px;
+        text-align: center;}
+/* -------　サイトのタイトル-------------------------------------------------- */
+
+.titleClose{
+    color: white ;
+    box-shadow:-2px 2px 6px 1px #9b9a9ac2;
+    background-image: linear-gradient(110deg, #6f96ff 0%, #81ff9c 100%);
+    letter-spacing: 0.3em;
+    opacity: 0.9;
+    padding:10px;
+    text-align:center;
+    width:100%;
+    font-size: 1.5em;
+    z-index:111;
+    position:fixed;
+    top:0;}
+    .titleOpen{
+    
+        color: white ;
+        box-shadow:-2px 2px 6px 1px #9b9a9ac2;
+        background-image: linear-gradient(110deg, #6f96ff 0%, #81ff9c 100%);
+        letter-spacing: 0.3em;
+        opacity: 0.8;
+        padding:10px;
+        text-align:center;
+        width:100%;
+        height:100%;
+        font-size: 1.5em;
+        z-index:111;
+        position:fixed;
+        opacity: 0.99999;
+        top:0;}
+
+
+        p.TitleY{
+    margin-top:0.8em;
+    position:fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+    span.NonoNo{
+        font-size:0.8em;
+        color: white ;}
+ button.TopMenu{
+    text-align:center;
+    padding:0.6em 0.8em;
+    
+ float:left;
+ color:white;
+ background-color: #88a7ff00;
+ border:solid 2px white;
+ border-radius: 7px;
+ font-size: 0.5em;
+ margin:0.2em;
+ letter-spacing: 0.1em;
+}
+ul.MenuList{
+    color:white;
+    display:grid;
+    list-style: none;
+    text-align: center;
+}
+ul.MenuList li{
+    text-decoration: none;
+    margin:0.8em;
+    padding:0.8em;
+  
+}
+ul.MenuList li a{
+    color:white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+ul.MenuList li.ItemWLine a:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1.7em;/*線の上下位置*/
+    display: inline-block;
+    width: 60px;/*線の長さ*/
+    height: 3px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: rgb(255, 255, 255);/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+  }
+/*-------歌手一覧デザイン---------*/
+img.PicSinger{border-radius: 50%; width:40px;
+    height:40px;  border:2px solid transparent; /*2*/
+background:linear-gradient(110deg, #6f96ff 0%, #81ff9c 100%) border-box;
+float: left;margin-right:1em;}  
+div.SingerItem{margin-bottom: 2em;} 
+button.singerbutton{border: none;background-color: transparent;font-size: 1.2em;margin-top: 10px;;}  
+/* -------　歌詞用-------------------------------------------------- */
+    /* ---ページのデザイン-- */
+    article.lyrics{
+        background-color:#ffffff;
+        margin:20px;
+        margin-top:40px;
+        margin-left:270px;
+        padding:20px;
+        width:630px;
+     
+        float:left;}
+    /* -------　パンクズリスト　------ */
+    div.PanKz{
+        padding-bottom:0.5em;} 
+    div.PanKz a{
+        padding: 2px;
+        margin-bottom:0.1em;
+        background-color:#e4e4e4 ;
+        border: solid 1px #e4e4e4;
+        border-radius:5px;
+        text-decoration: none;}
+    /* -------　歌詞名　------ */
+    h1.Dai{
+        line-height: normal;
+        width:90%;
+        text-align:center;
+        display:inline-block;
+        color:rgb(56, 56, 56);
+   }
+    /* -------　映画・歌手・製作者名　------ */
+    h2.KaiEi{
+        line-height: normal;
+        font-size:0.7em;
+        border-bottom: solid 0px DodgerBlue;
+        text-align:center;
+        display:inline-block;
+        width:90%;
+        color:rgb(56, 56, 56);
+    }
+    p.Se{text-align:center;margin-bottom:5px;}
+    /* -------　歌詞と解説　------ */
+    h2.Kai{
+        line-height: normal;
+        font-size:1.1em;
+        border-bottom: solid 0px DodgerBlue;
+        text-align:center;
+        display:inline-block;
+        width:90%;
+        color:rgb(56, 56, 56);
+      }
+    /* -------　折り目のあるデザイン　------ */
+    div.KaiCen{text-align: center;
+        background: aliceblue;
+        position: relative;
+        box-shadow: 0px 0px 0px 5px aliceblue;
+        border: dashed 1px green;
+        padding: 0.2em 0.5em;
+        color: #454545;}
+    div.KaiCen:after{
+        position: absolute;
+        content: '';
+        left: -7px;
+        top: -7px;
+        border-width: 0 0 20px 20px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255) rgb(255, 255, 255) #a8d4ff;
+        box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.15);}
+    /*        新メニューボタン            */
+
+    .NewSongMenu {
+        display:table;
+        grid:none;
+        height:auto;
+        row-gap: none;
+        clear:both;
+        width:100px;
+        text-align:center;
+        list-style-type:none;
+        padding:10px;
+        position:fixed;
+        bottom:0;
+        right:0;
+        background-color:#2256e4;
+        box-shadow:  2px 2px 5px 3px #555555c2;
+    margin-bottom:50px;
+    margin-right:20px;
+        color:white;
+        border-radius:50px 50px 50px 50px;
+        border-color: #6080d6;
+        z-index: 10;
+
+        animation-name: MovingMenue;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 1.5s;
+    }
+
+    /* ------歌詞が二つある場合の切り替えボタン----------- */
+    #LAButton{
+        -webkit-appearance: none;
+        text-align: center;
+        background: mediumblue;
+        position: relative;
+        box-shadow: 0px 0px 0px 5px mediumblue;
+        border: dashed 1px white;
+        padding: 0.2em 0.5em;
+        color: white;
+        margin:10px;
+        margin-top:0px;
+        padding-top:10px;
+        padding-bottom:10px;
+        width:42%;}
+    #LAButton:after{
+        -webkit-appearance: none;
+        position: absolute;
+        content: '';
+        left: -7px;
+        top: -7px;
+        border-width: 0 0 20px 20px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255) rgb(255, 255, 255) #a8d4ff;
+        box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.15);}
+    #LLButton{-webkit-appearance: none;
+        text-align: center;
+        background: aliceblue;
+        position: relative;
+        box-shadow: 0px 0px 0px 5px aliceblue;
+        border: dashed 1px cornflowerblue;
+        padding: 0.2em 0.5em;
+        color: silver;
+        margin:10px;
+        margin-top:0px;
+        padding-top:10px;
+        padding-bottom:10px;
+        width:42%;}
+    #LLButton:after{
+        -webkit-appearance: none;
+        position: absolute;
+        content: '';
+        left: -7px;
+        top: -7px;
+        border-width: 0 0 20px 20px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255) rgb(255, 255, 255) #a8d4ff;
+        box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.15);}
+    /* ------- 歌詞上の注意書き ------ */  
+    small.Tyuui{
+        color:red;font-weight: bold;}
+    /* ------- 内部歌詞リンク ------ */  
+    a.UtaLink{color:blue;}
+
+    /* -　歌詞のデザイン（一部（削除予定））- */
+    blockquote, p.blockquotep{
+        padding: 0.5em 1em;
+        background:  #f1f1f156;
+        border-left: solid 1px #3498db;
+        border-right:solid 0px #3498db;
+        border-radius:5px;
+        box-shadow:  0px 1px 2px 2px #6d6d6dc2;
+        text-align:left;
+        color:rgb(41, 41, 41);
+        padding:10px;
+        margin:10px;}
+    blockquote.block, p.blockquotep{
+        padding: 0.5em 1em;
+        position:relative;
+        background:  #f3f3f394;
+        border-left: dotted 0px #3498db;
+        border-right:solid 0px #3498db;
+        border-radius:5px;
+        box-shadow:  2px 2px 4px 1px #405866c2;
+        text-align:left;
+        color:rgb(41, 41, 41);
+        padding-left:33px;
+        padding-right:33px;
+        margin:10px;}
+    blockquote.block:before, p.blockquotep:before{
+        position: absolute;
+        top:20px;
+        left: 0px;
+        content: '“';
+        font-size: 4em;
+        opacity:.2;}
+    blockquote.block:after, p.blockquotep:after{
+        position: absolute;
+        bottom:-15px;
+        right:0px;
+        content: '”';
+        font-size: 4em;
+        opacity:.2;}
+
+    /* -------　英語の解説----------- */
+    legend.Kaiset{
+        font-size:1.3em;
+        font-weight:bold;
+        background-color: white;
+        margin:5px;
+        padding:10px;}
+    fieldset.Kaiset{
+        border: 1px solid black;
+        border-radius: 4px; /* 枠の丸み */
+        margin: 0em 1em; /* 枠外の余白 */
+        padding: 10px 15px;}
+    span.C{color:red;}
+    /* -------　ユーチューブ-------------- */
+    .youtube {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;}
+    .youtube iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100% !important;
+        height: 100% !important;}
+    /* -------　楽曲・映画・記事リスト------------ */
+    div.Itemlists{
+        position: relative;}
+    div.Itemlists a{
+        text-decoration-line: none;}
+    div.Gazoushutten{
+        position: absolute;
+        font-size: 0.5em;
+        line-height: 1em;
+        padding: 0.5em;
+        border-bottom-left-radius: 3px;
+        left:0;
+        bottom:0;
+        color: black;
+        background: rgb(255, 255, 255);}
+    div.Gazoushutten a{
+        text-decoration-line:none;}
+    p.RefGazou{
+        float:left;}
+    p.RefGazou a{
+        font-size:0.5em;
+        margin-bottom:0px;
+        padding:0px;
+        margin-top:0px;}
+    img.kijiPicNew{
+        width:120px;
+        height:120px;
+        margin-top:0px;
+        margin-bottom:0px;
+        border-top-left-radius:3px;
+        border-bottom-left-radius: 3px;}
+    div.kijikoko{
+        height:120px;
+        box-shadow:0px 0px 2px 1px rgb(214, 214, 214);
+        margin-bottom: 10px;
+        border-radius: 3px;}
+    div.kijikoko:hover{
+        background-color:rgb(226, 233, 255);}
+    div.kijikoko a{
+        text-decoration:none;}
+    div.kijikoko div.Uta{
+        font-size:0.9em;
+        padding:0.5em;
+        padding-left:140px;
+        margin:0px;}
+    div.kijikoko div.Eiga{
+        font-size:0.5em;
+        padding:0.1em;
+        padding-left:140px;
+        margin-top:-2em;
+        line-height:1.1em;}
+
+    /*　曲リストのデザイン（旧（削除予定）） */  
+    img.kijiPic{width:100px;height:100px;margin-top:0px;margin-bottom:-10px;}
+    div.kijikoko span.Eiga{font-size:0.6em;padding:0.1em;padding-left:10px;}
+    div.kijikoko span.Uta{font-size:1em;margin-top:0.1em;padding:1em;}
+
+      /*　あ行の映画のリストデザイン （削除予定）*/
+    div.MS{border:solid 0.1px black;
+        height:230px;
+        padding:20px;
+        box-shadow:  3px 3px 4px 2px rgb(163, 163, 163);}
+    span.Moku{
+        color:deepskyblue;
+        font-size:1.2em;}
+    ul.SongsList{
+        list-style-type: none;}
+    p.song{text-align: center;
+        border-bottom:solid 2px dodgerblue}
+    a.MovieUta{text-decoration:none;
+        color:blue;
+        font-size:0.9em;
+        margin-left:10px;}
+    span.ClickBelow{color:deeppink;
+        font-size:1.3em;}
+    h3.DaiUta{line-height: normal;
+            font-size:1.2em;
+            border-bottom: solid 3px DodgerBlue;
+            text-align:center;
+            display:inline-block;
+            color:rgb(56, 56, 56);}
+    h2.Mokuji{line-height: normal;font-size:1.5em;border-bottom: solid 3px DodgerBlue;text-align:center;color:rgb(56, 56, 56);display:inline-block;}
+
+    /*　記事を真ん中に */   
+    div.Kai{text-align: center;}
+    
+    /*　〜の記事へ戻るボタン（削除予定） */ 
+    div.Back{border:2px solid #2256e4 ;padding:3px;border-radius:4px;box-shadow:0px 2px 2px 1px #505050c2;
+        background-color:#ffffff;text-align: center;}
+    div.Back a{text-decoration:none;}
+    
+    /*　パレード記事のみ？ （削除予定） */ 
+    h3.ban{line-height: normal;
+        font-size:1.3em;
+        border-bottom: solid 3px DodgerBlue;
+        text-align:center;
+        display:inline-block;}
+    /*　映画の説明 */ 
+    span.Color{color:rgb(43, 149, 255);}
+
+    /*　新しい記事デザイン */     
+    div.Clu div.kijikoko{
+        height:350px; }
+    div.Clu img.kijiPicture{
+        width:230px;
+        height:230px;
+        margin-top:0px;
+        margin-bottom:0px;}
+    div.Clu a{
+        text-decoration:none;
+        color:black; }
+    div.kijikoko div.UtaNew{
+        font-size:0.9em;
+        padding:0.5em;
+        padding-left:10px;
+        margin:0px;}
+    div.kijikoko div.EigaNew{
+        font-size:0.5em;
+        padding:0.1em;
+        padding-left:10px;
+        margin-top:-2em;
+        line-height:1.1em;}
+    img.kijiPicture{
+        width:120px;
+        height:120px;
+        margin-top:0px;
+        margin-bottom:0px;}
+    div.Clu{
+        float:right;
+        text-decoration:none;
+        margin:20px;
+        margin-left:0px;
+        padding:10px;
+        width:250px;}    
+
+/* -------　ブログ用-------------------------------------------------- */ 
+    /*　タイトル */  
+    h1.Daimei{
+        line-height: normal;
+        border-bottom: solid 3px DodgerBlue;
+        text-align:center;
+        display:inline-block;
+        color:rgb(56, 56, 56);}
+    /* h3 */  
+    h3.Kai{
+        line-height: normal;
+        font-size:1.3em;
+        text-align:center;
+        display:inline-block;
+        color:rgb(56, 56, 56);}
+    /*　目次クリック後の記事デザイン */  
+    .kizi{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:5px;
+        margin-right:5px;
+        padding: 0.5em 0.5em;}
+    /*　記事デザイン */  
+    div.Art{
+        background-color:#ffffff;
+        margin:20px;
+        margin-top:40px;
+        margin-left:270px;
+        padding:20px;
+        width:630px;
+        float:left;}
+    div.Review{
+        background-color:#ffffff;
+        margin:20px;
+        margin-top:40px;
+        margin-left:270px;
+        padding:20px;
+        width:630px;
+        float:left;
+        }    
+    /*　記事内引用 */  
+    div.block{
+        padding: 0.5em 1em;
+        position:relative;
+        background:#f3f3f394;
+        border-left: solid 3px #3498db;
+        border-right:solid 2px #3498db;
+        border-radius:5px;
+        box-shadow:  0px 3px 3px 2px #6d6d6dc2;
+        text-align:left;
+        color:rgb(0, 0, 0);
+        padding-left:33px;
+        padding-right:33px;
+        margin:10px;}
+    div.block:before{position: absolute;
+        top:20px;
+        left: 0px;
+
+        content: '“';
+        font-size: 4em;
+        opacity:.2;}
+    div.block:after{position: absolute;
+        bottom:-15px;
+        right:0px;
+
+        content: '”';
+        font-size: 4em;
+        opacity:.2;}
+    /*　目次デザイン（合併予定） */  
+    ul.Mokuzi{list-style-type:none;margin:30px;background-color:rgb(228, 228, 228);padding:10px;border-radius:5px;}
+    ul.Mokuzi2{list-style-type:none;margin:30px;background-color:rgb(228, 228, 228);padding:10px;border-radius:5px;}
+    /*　目次デザイン（合併後） */  
+    div.mokujiDiv{
+        position: absolute;
+        top:0;
+        left:0;
+        padding:0.5em;
+        color:white;
+        background-color: black;
+    }
+    ul.mokujiUl {
+        /*border: solid 2px deepskyblue;*/
+        background-color: rgb(241, 241, 241);
+        padding: 0.5em;
+        position: relative;
+        margin-top: 2em;
+        padding-top:3em;
+    
+      }
+      ul.mokujiUl li {
+        line-height: 1.5;
+        margin-left: 3em;
+      margin-bottom:1em;
+        list-style-type: decimal;
+        color: black;
+    text-align: left;
+      }
+      u.lmokujiUl li a{
+          color:black;
+      }
+
+
+
+    /* ------- Unknown ------ */
+    h2.DaiKai{line-height: normal;font-size:1.0em;border-bottom: solid 0px DodgerBlue;text-align:center;display:inline-block;width:90%;color:rgb(56, 56, 56);}
+    h1.Kaisutu{border-bottom: solid 3px DodgerBlue;display:inline-block;}
+    h2.Kaisetu{border-bottom: solid 3px DodgerBlue;text-align:center;display:inline-block;}
+    h1.TITLE{line-height: normal;}      
+    div.arti{display: grid;gap: 10px;grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))}
+    div.arti a{text-decoration:none;  color:white;}
+    a.Eigo{text-decoration-color:red;}
+    ul.Cas{background-color:rgb(228, 228, 228);padding:10px;border-radius:5px;list-style-type:none;margin:10px;padding:10px;}
+    .black{color:black;}
+    div.EK{text-align:center;font-size:1.3em;font-weight:bold;position: relative;top: -1em; background-color: white;margin-left:0px;padding-left: 0px;}
+    div.KS{border: 2px solid black; /* 枠の太さ・種類・色 */border-radius: 4px; /* 枠の丸み */margin: 1.8em 1em; /* 枠外の余白 */padding: 5px 15px;}
+    div.New{display: grid;gap: 5px;grid-template-columns: repeat(auto-fit, minmax(165px, 1fr))}
+
+
+
+}
+@media (max-width: 1250px) { #css{width:auto;}   
+    article.lyrics{margin-left:150px;}
+    div.Review{margin-left:150px;}
+    div.Art{margin-left:150px;}
+}
+@media (max-width: 1150px) { #css{width:auto;}
+    article.lyrics{margin-left:100px;}
+    div.Review{margin-left:100px;}
+    div.Art{margin-left:100px;}
+    /* ------- Unknown ------ */
+    h3.NewTitle{font-weight:bold;text-shadow:5px 5px 1px silver;}
+}
+@media (max-width: 1050px) { #css{width:auto;}
+    /* 　楽曲・映画・記事リスト */
+    div.Clu{float:left;padding:20px;width:630px;margin:20px;margin-left:100px;margin-bottom:50px;}
+    div.Clu div.kijikoko{height:120px; }
+    div.Clu img.kijiPic{width:110px;height:110px;margin-top:0px;margin-bottom:-10px;}
+    div.Clu img.kijiPicture{width:120px;height:120px;margin-top:0px;margin-bottom:0px;border-top-left-radius: 3px;border-bottom-left-radius: 3px;}
+    div.Clu div.kijikoko div.UtaNew{font-size:0.9em;padding:0.5em;padding-left:140px;margin:0px;}
+    div.Clu div.kijikoko div.EigaNew{font-size:0.5em;padding:0.1em;padding-left:140px;margin-top:-2em;}
+}
+@media (max-width: 900px) { #css{width:auto;}
+    div.arti{ display: grid;gap: 3px;grid-template-columns: repeat(auto-fit, minmax(165px, 1fr))}
+}
+@media (max-width: 768px) { #css{width:auto;}
+    div.Art{margin:0px;padding:20px;margin-top:50px;width:100%;border-right:none;clear:both;}
+    div.Clu{margin:0px;margin-bottom:50px;padding:20px;margin-top:0px;width:100%;border-right:none;clear:both;}
+    div.Review{margin:0px;padding:20px;margin-top:0px;width:100%;border-right:none;clear:both;}
+    /*article.lyrics{margin:0px;padding:20px;padding-top:0px;margin-top:0px;width:100%;border-right:none;clear:both;}*/
+    article.lyrics{margin:0px;padding:20px;width:100%;margin-top:50px;border-right:none;clear:both;}
+    /*-----歌手一覧デザイン-----*/
+    button.singerbutton{border: none;background-color: transparent;font-size: 0.8em;margin-top: 5px;;} 
+    img.PicSinger{width:30px;height:30px;margin-right:0.5em;}  
+    header{
+        margin-bottom:0px;
+    }
+    /* 新記事メニュー */
+    img.kijiPicture{width:120px;height:120px;margin-top:0px;margin-bottom:0px;}
+    /* 　旧楽曲デザイン */
+    img.kijiPic{width:110px;height:110px;margin-top:0px;margin-bottom:-15px;}
+    
+    /* unknown */
+    h1.title{text-align:center;color: #2256e4 ;background-color: #ffffff;padding:15px;width:100%;border-bottom:solid 0px #ffffff00;position:relative;z-index:111x;}
+
+    
+    /*　目次デザイン（合併予定） */  
+    ul.Mokuzi{line-height: 1.8em;width:auto;font-size:18px;text-decoration-line: none;}
+    ul.Mokuzi2{line-height: 1.8em;width:auto;font-size:15px;padding:2px;padding-left:10px;padding-right:10px;}
+
+    /* -　歌詞のデザイン（一部（削除予定））- */
+    blockquote, p.blockquotep{
+        margin-left:-10px;
+        margin-right:-10px;
+        margin-top:10px;
+        margin-bottom:10px;}
+    p.blockq{margin-left:-10px;
+        margin-right:-10px;
+        margin-top:10px;
+        margin-bottom:10px;}
+    blockquote.block, p.blockquotep{
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:10px;
+        margin-bottom:10px;}
+
+    body {
+        background-color: #ffffff;
+        line-height: 1.6em;
+        font-size:15px;}
+    p.Kaisets{
+        margin:0px 10px;}
+    h1.Daimei{
+        font-size:24px;
+        line-height: normal;
+        margin-top:10px;
+        margin-bottom:10px;}
+    h1.Dai{
+        font-size:1.2em;
+        line-height: normal;
+        margin-top:5px;
+        margin-bottom:10px;}
+
+}
+@media (max-width: 480px) { #css{width:auto;}
+    body{
+    background-color: #ffffff;}
+}
+    

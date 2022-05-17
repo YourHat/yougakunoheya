@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.disneylanguage\.com(:80)?$
+RewriteRule ^(.*)$ http://disneylanguage.com/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
