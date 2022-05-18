@@ -49,13 +49,15 @@ if(document.getElementById("UnderTitleAffi")){
 if(document.getElementById("TopAffi")){
   var LyricsAffiAds1 = document.createElement('script');
   LyricsAffiAds1.async = true;
-  LyricsAffiAds1.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+  LyricsAffiAds1.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-41581290502266";
+  LyricsAffiAds1.crossorigin = "anonymous";
   var LyricsAffiAds2 =document.createElement('ins');
   LyricsAffiAds2.className = "adsbygoogle";
   LyricsAffiAds2.style.display = "block";
+  LyricsAffiAds2.dataset.adLayout = "in-article";
   LyricsAffiAds2.dataset.adClient = "ca-pub-4158129050226668";
-  LyricsAffiAds2.dataset.adSlot = "8591595257";
-  LyricsAffiAds2.dataset.adFormat = "auto";
+  LyricsAffiAds2.dataset.adSlot = "2457100157";
+  LyricsAffiAds2.dataset.adFormat = "fluid";
   LyricsAffiAds2.dataset.fullWidthResponsive = "false";
   var LyricsAffiAds3 = document.createElement('script');
   LyricsAffiAds3.text = "(adsbygoogle = window.adsbygoogle || []).push({});";
@@ -64,6 +66,30 @@ if(document.getElementById("TopAffi")){
   LyricsAddiAds.appendChild(LyricsAffiAds2);
   LyricsAddiAds.appendChild(LyricsAffiAds3);
 }
+if(document.getElementById("underheadafi")){
+  var LyricsAffiAds1 = document.createElement('script');
+  LyricsAffiAds1.async = true;
+  LyricsAffiAds1.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4158129050226668";
+  LyricsAffiAds1.crossorigin = "anonymous";
+  var LyricsAffiAds2 =document.createElement('ins');
+  LyricsAffiAds2.className = "adsbygoogle";
+  LyricsAffiAds2.style.display = "block";
+  LyricsAffiAds2.dataset.adClient = "ca-pub-4158129050226668";
+  LyricsAffiAds2.dataset.adSlot = "9764195793";
+  LyricsAffiAds2.dataset.adFormat = "horizontal";
+  LyricsAffiAds2.dataset.fullWidthResponsive = "false";
+  var LyricsAffiAds3 = document.createElement('script');
+  LyricsAffiAds3.text = "(adsbygoogle = window.adsbygoogle || []).push({});";
+  var LyricsAddiAds = document.getElementById("underheadafi");
+  LyricsAddiAds.appendChild(LyricsAffiAds1);
+  LyricsAddiAds.appendChild(LyricsAffiAds2);
+  LyricsAddiAds.appendChild(LyricsAffiAds3);
+}
+
+
+
+
+
 
 //ScrollEvent
 YouT = 1;
@@ -80,13 +106,15 @@ function youtube_defer() {
   if(document.getElementById("LyricsAffi")){
         var LyricsAffiAds1 = document.createElement('script');
         LyricsAffiAds1.async = true;
-        LyricsAffiAds1.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+        LyricsAffiAds1.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-415812905022666";
+        LyricsAffiAds1.crossorigin = "anonymous";
         var LyricsAffiAds2 =document.createElement('ins');
         LyricsAffiAds2.className = "adsbygoogle";
         LyricsAffiAds2.style.display = "block";
         LyricsAffiAds2.dataset.adClient = "ca-pub-4158129050226668";
-        LyricsAffiAds2.dataset.adSlot = "4752043622";
-        LyricsAffiAds2.dataset.adFormat = "horizontal";
+        LyricsAffiAds2.dataset.adSlot = "3203491021";
+        LyricsAffiAds2.dataset.adLayoutKey = "-ef+6k-30-ac+ty";
+        LyricsAffiAds2.dataset.adFormat = "fluid";
         LyricsAffiAds2.dataset.fullWidthResponsive = "false";
         var LyricsAffiAds3 = document.createElement('script');
         LyricsAffiAds3.text = "(adsbygoogle = window.adsbygoogle || []).push({});";
@@ -107,7 +135,8 @@ function youtube_defer() {
     if(document.getElementById("MiddleAffi")){
         var LyricsAffiAds1 = document.createElement('script');
         LyricsAffiAds1.async = true;
-        LyricsAffiAds1.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+        LyricsAffiAds1.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-415812905022666";
+        LyricsAffiAds1.crossorigin = "anonymous";
         var LyricsAffiAds2 =document.createElement('ins');
         LyricsAffiAds2.className = "adsbygoogle";
         LyricsAffiAds2.style.display = "block";
@@ -135,7 +164,7 @@ function youtube_defer() {
       LyricsAffiAds2.dataset.adFormat = "autorelaxed";
       LyricsAffiAds2.dataset.adClient = "ca-pub-4158129050226668";
       LyricsAffiAds2.dataset.adSlot = "6706972130";
-      LyricsAffiAds2.dataset.matchedContentRowsNum = "7";
+      LyricsAffiAds2.dataset.matchedContentRowsNum = "6";
       LyricsAffiAds2.dataset.matchedContentColumnsNum = "1";
       LyricsAffiAds2.dataset.matchedContentUiType = "image_card_sidebyside";
       var LyricsAffiAds3 = document.createElement('script');
